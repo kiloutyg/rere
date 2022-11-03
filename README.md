@@ -1,2 +1,2 @@
-# rere
-Projet cesi cube
+# ReRe
+Projet CESI cube.
