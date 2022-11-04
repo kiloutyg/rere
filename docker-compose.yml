@@ -1,21 +1,21 @@
 version: '3.8'
 services:
   db:
-    image: postgres:15-alpine3.16
+    image: mariadb
     container_name: rere_db
     ports:
       - 5432:5432
     environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_PRIMARY_USER: postgres
-      POSTGRES_PRIMARY_PASSWORD: postgres
-      POSTGRES_USER: postgres
-      # POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: rere
-      MODE: postgres
-      POSTGRES_MODE: primary
-      POSTGRES_ROOT_PASSWORD: postgres
-      POSTGRES_PRIMARY_PORT: 5432
+      MARIADB_PASSWORD: MARIADB
+      MARIADB_PRIMARY_USER: MARIADB
+      MARIADB_PRIMARY_PASSWORD: MARIADB
+      MARIADB_USER: MARIADB
+      # MARIADB_PASSWORD: MARIADB
+      MARIADB_DB: rere
+      MODE: MARIADB
+      MARIADB_MODE: primary
+      MARIADB_ROOT_PASSWORD: MARIADB
+      MARIADB_PRIMARY_PORT: 5432
     # networks:
       # vpcbr:
         # ipv4_address: 172.20.1.15
